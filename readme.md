@@ -4,3 +4,5 @@
 
 3. réteg: model (User model), db:sync, db:seed
 
+4. réteg: repositories + teszt   user.repository.js + node test parancs
+
