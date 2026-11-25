@@ -6,3 +6,4 @@
 
 4. réteg: repositories + teszt   user.repository.js + node test parancs
 
+5. réteg: service réteg: utils-> AppError, service->repo függvényhívások.
