@@ -13,6 +13,7 @@ module.exports = {
     async getById(id){
         const user = await userRepository.findById(id);
         if (!user) throw new AppError('Felhasználó nem található', 404);
+        return user;
     }, 
 
     async create({name, email, password, role}){

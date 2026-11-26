@@ -8,9 +8,7 @@ try {
     await sequelize.sync();  // csak DEV... // PROD: migráció pl knex
     app.listen(config.port, ()=> console.log(`Szerver fut: http://localhost:${config.port}`));
 } catch (error) {
-    
+    console.error('DB hiba! ', error.message);
+    process.exit(1);
 }
-
-
-
 })();
